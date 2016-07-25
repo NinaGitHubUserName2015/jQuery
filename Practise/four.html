@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="js/jquery-3.1.0.js"></script>
+</head>
+
+<body>
+	<div>元素一</div>
+	<div>元素二</div>
+	<div>元素三</div>
+    <!-- jQuery对象转化成DOM对象 -->
+    <script type="text/javascript">
+		var $div = $('div'); //jQuery对象
+		//利用数组下标的方式读取到jQuery中的DOM对象
+        var div1 = $div[0];
+        //通过jQuery自带的get()方法
+        var div2 = $div.get(1);
+		div1.style.color = 'red'; //操作dom对象的属性
+		div2.style.color = 'red'; //操作dom对象的属性
+    </script>
+    
+</body>
+
+</html>
